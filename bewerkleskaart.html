@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leskaart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="onderste-scherm">
+
+<form id="dataForm">
+  <section class="leskaart">
+    <div id="titel-veld" class="kaart">
+      <h1>Bewerk leskaart</h1>
+      <textarea class="input" id="titel" placeholder="Typ hier de titel..."></textarea>
+    </div>
+
+    <!-- Theorie + Afbeeldingen -->
+    <div id="theorie-met-afbeeldingen" class="kaart">
+      <div class="theorie-tekst">
+        <textarea class="input" id="theorie" placeholder="Typ hier je tekst..."></textarea>
+      </div>
+      <div class="afbeeldingen-container">
+        <div id="afbeelding1-url" class="afbeelding">
+        <textarea class="input" id="afb1" placeholder="Typ hier het URL van de afbeelding."></textarea></div>
+      </div>
+    </div>
+
+    <div id="opdracht-met-afbeeldingen" class="kaart">
+      <div class="opdracht-container">
+        <div class="opdracht-tekst">
+          <img class="icoon" src="./img/controller-icon.png" alt="Controller icoon">
+          <textarea class="input" id="opdracht" placeholder="Typ hier je opdracht..."></textarea>
+        </div>
+        <div class="afbeelding">
+          <!-- <img src="dummy" alt="Afbeelding 2"> -->
+          <textarea class="input" id="afb2" placeholder="Typ hier het URL van de afbeelding."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div id="antwoord" class="kaart">
+      <label for="extra">Antwoord nodig:</label><br>
+      <textarea class="input" id="extra" placeholder="Geef aan of er een antwoord nodig is"></textarea>
+    </div>
+  </section>
+
+ <button type="button" id="update-knop">werk bij</button>
+ 
+</form>
+
+<div id="response"></div>
+
+<script src="bewerkleskaart.js"></script>
+</body>
+</html>

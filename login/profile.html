@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Profiel</title>
+</head>
+<body>
+  <h1>Jouw profiel</h1>
+  <p id="profile"></p>
+
+  <script>
+    async function loadProfile() {
+      const token = localStorage.getItem("token");
+      const res = await fetch("http://localhost:3000/profile", {
+        headers: { "Authorization": "Bearer " + token }
+      });
+
+      const data = await res.json();
+      document.getElementById("profile").innerText = JSON.stringify(data, null, 2);
+    }
+
+    loadProfile();
+  </script>
+</body>
+</html>

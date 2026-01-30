@@ -1,0 +1,20 @@
+<img src="https://www.meidoornhoeve.be/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-19-at-11.24.45-e1718883121335.jpeg" width="25%">
+
+
+<h1>2. Gametheorie </h1>
+<h2>Over de gameprincipes van succesvolle games.</h2>
+<p>Elke goede game bevat een paar belangrijke gameprincipes. Hieronder lees je meer over de vier gameprincipes die onmisbaar zijn voor een goede game:
+</P>
+<ol>
+<li>Duidelijkheid </li>
+<li>Gameflow & leren </li>
+<li>Betrokkenheid </li>
+<li>Beloning </li>
+</ol>
+<h2>Gameprincipe 1: Duidelijkheid </h2> <p>
+In elk spel heb je spelregels die ervoor zorgen dat iedere gamer weet waar hij aan toe is. Alles wat ervoor moet zorgen om een spel succesvol af te ronden en hoeveel punten je daarvoor krijgt, noem je de spelregels. De spelregels worden vaak in het begin van de game duidelijk gemaakt. Dat kan met tekst maar ook vooral met symbolen, pictogrammen en voorbeelden. Je hoeft niet alles in één keer uit te leggen. Met Just In Time informatie (JIT) zorg je ervoor dat er geen overkill aan informatie op één moment komt. Na een paar levels heb je wellicht nieuwe functies in de game, die pas op dat moment uitgelegd worden.
+Het doel van de game is natuurlijk ook van groot belang, het doel moet duidelijk zijn voor de gamer. Dit kan vaak in één heldere zin duidelijk gemaakt worden bijvoorbeeld: "bevrijd de prinses!".
+Maak overzicht voor de gamer. </p>
+<h2>Gameprincipe 2: Gameflow & leren </h2><p>
+ Een populaire term bij gamedevelopers is de gameflow. Als een gamer in een bepaalde flow komt is de game leuk en verslavend. Met een goede balans tussen de uitdagingen (challenges) en de gevraagde vaardigheden (skills) raakt de gamer in een gameflow. De game moet dus zo worden ingericht dat het niveau na elk level omhoog gaat, anders wordt het te saai. Maar als het niveau te snel omhoog gaat raakt de gamer gefrustreerd. Nu is die frustratie minder erg dan wanneer het te saai is. Liever iets te moeilijk dan te makkelijk dus.
+</p>

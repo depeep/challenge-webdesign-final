@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leskaart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body class="onderste-scherm"> -->
+  <body>
+
+  <h1>Overzicht van de leskaarten</h1>
+
+
+  <button onclick="fetchContent()">Vernieuw!</button>
+
+  <!-- <button onclick="downloadWord()">Download als Word-document</button>
+  naar word werkt, maar exporteert alleen html-code -->
+  <!-- <button onclick="downloadPDF()">Download als PDF</button>
+  werkt niet -->
+
+  
+  <div id="leskaartLijst"></div>   
+
+  
+  
+ <script src="bewerkvanuitoverzicht.js"> </script>
+
+<!-- schript om er pdf van te maken WERKT NOG NIET-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+  function downloadPDF() {
+    const element = document.getElementById('leskaartLijst'); // GEEN .innerHTML
+    const opt = {
+      margin: 0.5,
+      filename: 'leskaarten.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+    html2pdf().set(opt).from(element).save();
+  }
+</script> -->
+
+
+</body>
+</html>
+
+

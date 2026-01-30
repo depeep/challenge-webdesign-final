@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leskaart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body class="onderste-scherm"> -->
+  <body>
+
+  <h1>Leerlingmateriaal</h1>
+
+
+<!-- Laad html2pdf via <script> (niet via import): -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-YcsIP2JH0N7dOcQbq0R7t8+1vU1UjJmX7Zb3w6p9g7z9x8c7kLk5cYVQvT2wK3GQXxG5gk1O3jQ4h0p2ZCwOPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div id="leskaartViewer">
+  <div id="leskaartContainer"><!-- Hier komt 1 leskaart --></div>
+
+  <div class="navigatie">
+    <button id="btnPrev" type="button">◀ Vorige</button>
+    <span id="positie"></span>
+    <button id="btnNext" type="button">Volgende ▶</button>
+  </div>
+
+</div>  
+  
+ <script src="lesmateriaalperkaart.js"> </script>
+
+
+</body>
+</html>
+
+

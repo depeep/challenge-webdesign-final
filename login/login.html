@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Systeem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Inloggen</h1>
+
+  <div class="container">
+
+    <div class="form">
+      <h2>Login</h2>
+      <input id="loginEmail" type="email" placeholder="E-mail" required>
+      <input id="loginPassword" type="password" placeholder="Wachtwoord" required>
+      <button onclick="login()">Login</button>
+      <p id="loginMsg"></p>
+    </div>
+
+    <div class="form">
+      <h2>Registreren</h2>
+      <input id="regName" type="text" placeholder="Naam" required>
+      <input id="regEmail" type="email" placeholder="E-mail" required>
+      <input id="regPassword" type="password" placeholder="Wachtwoord" required>
+      <button onclick="register()">Registreren</button>
+      <p id="regMsg"></p>
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

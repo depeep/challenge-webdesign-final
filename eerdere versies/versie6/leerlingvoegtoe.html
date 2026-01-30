@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leerlingenbeheer</title>
+  <link rel="stylesheet" href="leerlingbeheer.css">
+</head>
+<body>
+
+<h1>Leerlingenbeheer</h1>
+
+<!-- <h2>Zoek een leerling</h2> -->
+<!-- <div class="search-container">
+  <input type="text" id="id" placeholder="Magistercode" oninput="liveSearch()">
+  <input type="text" id="naam" placeholder="Naam" oninput="liveSearch()">
+  <input type="text" id="gebruikersnaam" placeholder="Gebruikersnaam" oninput="liveSearch()">
+  <input type="text" id="wachtwoord" placeholder="Wachtwoord" oninput="liveSearch()">
+  <input type="text" id="actief" placeholder="Actief (true/false)" oninput="liveSearch()">
+
+  <button onclick="searchLeerling()">Zoeken</button>
+  <button onclick="toggleSort()">Sorteer op naam</button>
+  <button onclick="openNewLeerlingForm()">Nieuwe leerling</button>
+</div>
+
+<div id="result"></div> -->
+
+<h2>Voeg leerling toe</h2>
+<div id="editForm">
+  <h3>Leerlinggegevens</h3>
+
+  <input type="text" id="editId" placeholder="Magistercode"><br>
+  <input type="text" id="editNaam" placeholder="Naam"><br>
+  <input type="text" id="editGebruikersnaam" placeholder="Gebruikersnaam"><br>
+  <input type="text" id="editWachtwoord" placeholder="Wachtwoord"><br>
+  <input type="number" id="editActief" placeholder="Actief (1 of 0)"><br>
+
+  <button onclick="addLeerling()">Voeg toe</button>
+  <!-- <button onclick="patchLeerling()">Werk bij</button> -->
+  <button onclick="closeEditForm()">Annuleren</button>
+</div>
+
+<script src="leerlingbeheer.js"></script>
+</body>
+</html>

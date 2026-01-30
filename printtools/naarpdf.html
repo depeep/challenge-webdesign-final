@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML naar PDF</title>    
+</head> 
+<body>
+
+<!-- Voeg deze scripts toe -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+<div id="content">
+    <h1>Titel van de pagina</h1>
+    <p>Dit is een voorbeeldtekst.</p>
+</div>
+
+<button onclick="downloadPDF()">Download als PDF</button>
+
+<script>
+function downloadPDF() {
+    const element = document.getElementById('content');
+    html2pdf().from(element).save();
+}
+</script>
+</body>
+</html>

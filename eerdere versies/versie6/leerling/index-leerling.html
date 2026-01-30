@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesomgeving</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <div class="topbar">
+    Gamedesign Leeromgeving
+
+  </div>
+  <div class="main">
+    <nav class="sidebar">
+      <!-- initiele vulling van de sidebar  -->
+      <!-- <a href="#">Home</a>
+      <a href="#">Leskaarten</a>
+      <a href="#">Resultaten</a>
+      <a href="#">Instellingen</a> -->
+      <!--  <a href="leskaart.html" onclick="openInIframe(event, 'leskaart.html')">leskaart</a>   -->
+      <!-- **** bestand gebruikt om concept voor leskaart te bouwen vanuit wireframe weg in nieuwere versies-->
+      <!--  bewerkleskaart.html ******** wordt niet meer vanuit hier gelinkt, maar  aangeroepen en gevuld vanuit bewerkvanuitoverzicht en gevuld met bestaande data -->
+      <a href="../overzicht.html" onclick="openInIframe(event, '../overzicht.html')">Overzicht van de leskaarten</a>
+               
+    </nav>
+
+    <div class="content">
+      <iframe id="content-iframe" class="content-iframe" src="welkom.html" title="Welkom"></iframe>
+    </div>
+    
+    <aside class="rightbar">
+      <button class="login-btn">Inloggen</button>
+      <div class="progress-box">
+        <strong>Voortgang</strong>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <span>60% voltooid</span>
+      </div>
+    </aside>
+  </div>
+  <div class="bottombar">
+    &copy; 2026 JVP
+  </div>
+  <!-- <script src="leskaart.js"></script> -->
+ 
+  <!-- script om pagina in iframe te landen zonder hele pagina te verversen -->
+<script>
+function openInIframe(event, url) {
+  event.preventDefault();
+  document.getElementById('content-iframe').src = url;
+}
+</script>
+
+</body>
+
+</html>
+    <script src="./leerlingscript.js"></script>

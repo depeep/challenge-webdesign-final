@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leerlingenbeheer</title>
+  <link rel="stylesheet" href="leerlingbeheer.css">
+</head>
+
+<body>
+
+<h1>Leerlingenbeheer</h1>
+
+<!-- TOP CONTAINER: SEARCH (links) + EDIT FORM (rechts) -->
+<div class="top-container">
+
+  <!-- SEARCH KAART -->
+  <div class="card search-card">
+    <h2>Zoek een leerling</h2>
+
+    <div class="search-container">
+      <input type="text" id="id" placeholder="Magistercode" oninput="liveSearch()">
+      <input type="text" id="naam" placeholder="Naam" oninput="liveSearch()">
+      <input type="text" id="gebruikersnaam" placeholder="Gebruikersnaam" oninput="liveSearch()">
+      <input type="text" id="wachtwoord" placeholder="Wachtwoord" oninput="liveSearch()">
+      <input type="text" id="actief" placeholder="Actief (0 of 1)" oninput="liveSearch()">
+      <br>
+      <button onclick="searchLeerling()">Zoeken</button>
+      <button onclick="toggleSort()">Sorteer op naam</button>
+    </div>
+  </div>
+
+  <!-- EDITFORM KAART -->
+  <div class="card edit-card">
+    <h2>Bewerk leerling</h2>
+
+    <div id="editForm" class="hidden">
+      <input type="text" id="editId" placeholder="Magistercode">
+      <input type="text" id="editNaam" placeholder="Naam">
+      <input type="text" id="editGebruikersnaam" placeholder="Gebruikersnaam">
+      <input type="text" id="editWachtwoord" placeholder="Wachtwoord">
+      <input type="text" id="editActief" placeholder="Actief (0 of 1)">
+      <br>
+      <button onclick="patchLeerling()">Werk bij</button>
+      <button onclick="closeEditForm()">Annuleren</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- RESULTAAT-KAART -->
+<div class="card" id="result"></div>
+
+<script src="leerlingbeheer.js"></script>
+</body>
+</html>

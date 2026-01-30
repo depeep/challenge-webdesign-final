@@ -1,0 +1,259 @@
+
+
+/* index */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .topbar {
+      background: #333;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+      font-size: 1.2em;
+      flex-shrink: 0;
+    }
+    .main {
+      display: flex;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+    .sidebar {
+      background: #444;
+      color: #fff;
+      width: 200px;
+      padding: 24px 0;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .sidebar a:hover {
+      background: #666;
+    }
+    .content {
+      flex: 1 1 auto;
+      background: #fff;
+      padding: 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+    .bottombar {
+      background: #333;
+      color: #fff;
+      padding: 12px;
+      text-align: center;
+      font-size: 1em;
+      flex-shrink: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+
+
+    .rightbar {
+      background: #444;
+      color: #fff;
+      width: 220px;
+      padding: 24px 0;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      border-left: 2px solid #ddd;
+    }
+    .login-btn {
+      background: #f8e5e5;
+      color: #444;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 16px;
+      transition: background 0.2s;
+    }
+    .login-btn:hover {
+      background: #bdbcbc;
+    }
+
+    .logout-btn {
+      background: #f8e5e5;
+      color: #444;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 16px;
+      transition: background 0.2s;
+    }
+    .logout-btn:hover {
+      background: #bdbcbc;
+    }
+    .progress-box {
+      width: 80%;
+      color: #444;
+      background: #fffbe6;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 16px;
+      text-align: center;
+    }
+    .progress-bar {
+      width: 100%;
+      background: #ddd;
+      border-radius: 8px;
+      height: 18px;
+      margin-top: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .progress-fill {
+      background: #f9c846;
+      height: 100%;
+      border-radius: 8px;
+      width: 60%; /* voorbeeld: 60% voortgang */
+      transition: width 0.3s;
+    }
+
+
+
+
+/* Algemene stijl voor kaarten */
+.kaart {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Theorie-kaart layout */
+#theorie-met-afbeeldingen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.theorie-tekst {
+  flex: 2;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.afbeeldingen-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.afbeelding {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.afbeelding img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+/* Opdracht-kaart layout */
+#opdracht-met-afbeeldingen {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.opdracht-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.opdracht-tekst {
+  flex: 2;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.opdracht-container .afbeelding {
+  flex: 1;
+  height: 150px;
+  background: #fafafa;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.opdracht-container .afbeelding img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+/* Icoon */
+.icoon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Invulvak */
+.input {
+  width: 90%;
+  min-height: 120px;
+  padding: 12px;
+  border: 2px solid #f9c846;
+  border-radius: 12px;
+  font-size: 1em;
+  background: #fffbe6;
+  resize: none;
+}
+.input:focus {
+  outline: none;
+  border-color: #e6b800;
+  box-shadow: 0 0 8px rgba(249, 200, 70, 0.4);
+}
+
+
+.logo-img {
+  max-width: 35%;
+  border-radius: 12px;
+  margin: 20px auto;   /* auto = centreren */
+  display: block;      /* nodig voor centreren */
+}

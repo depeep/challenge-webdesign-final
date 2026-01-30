@@ -1,0 +1,140 @@
+/* ---------- Algemene stijl ---------- */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef3ff;
+  padding: 20px;
+}
+
+.search-container,
+#editForm {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 2px solid #b3c2ff;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+input:focus {
+  border-color: #2c4a9a;
+}
+
+/* ---------- Error stijl ---------- */
+
+input.error {
+  border-color: #ff4444;
+  background: #ffe6e6;
+}
+
+input.error:hover::after {
+  content: attr(data-error);
+  color: #fff;
+  background: #ff4444;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 5;
+  border-radius: 4px;
+}
+
+/* ---------- Kaarten ---------- */
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  background: #2c4a9a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #1c326b;
+}
+
+.delete-btn {
+  background: #c62828;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Top layout: search links, edit rechts */
+.top-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Kaarten */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  width: 100%;
+}
+
+.search-card {
+  flex: 1;
+}
+
+.edit-card {
+  flex: 1;
+}
+
+/* Zorg dat editForm normaal zichtbaar wordt ingeladen */
+.hidden {
+  display: none;
+}
+
+/* invoervelden smaller */
+.search-container input,
+#editForm input {
+  width: 250px;
+  max-width: 100%;
+}
+/* resultaat sectie centreren en max breedte */
+#result {
+  max-width: 95%;
+  margin: 30px auto;
+  padding: 20px;     /* optioneel: extra lucht */
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  background: #fff;
+}
+
+/* resultaatkaarten smaller en gecentreerd */
+#result .card {
+  max-width: 50%;
+  margin: 15px auto;
+}
+/* buttons mooier */
+button {
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}

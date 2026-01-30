@@ -1,0 +1,59 @@
+.leskaart { 
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+.kaart { 
+  padding: 16px;
+  border: 1px solid #ddd;
+   border-radius: 8px; 
+   margin-bottom: 16px; 
+   background: #fff; 
+  }
+.leskaart-item img { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; }
+
+.afbeeldingen-container { 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+}
+.afbeelding { 
+  flex: 1 1 280px;
+ }
+.opdracht-container { 
+  display: grid; 
+  grid-template-columns: 1fr auto; 
+  gap: 12px; 
+  align-items: start; 
+}
+.opdracht-tekst { 
+  display: flex; 
+  gap: 8px; 
+  align-items: flex-start; 
+}
+.opdracht-tekst .icoon { 
+  width: 28px; 
+  height: 28px; 
+  flex: 0 0 28px; 
+}
+.input { 
+  width: 100%; 
+  min-height: 110px; 
+}
+.navigatie { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 16px; 
+  margin-top: 8px; }
+.export { 
+  display: flex; 
+  justify-content: 
+  center; margin-top: 8px; 
+}
+button:disabled { 
+  opacity: 0.5; 
+    cursor: not-allowed; 
+}
