@@ -22,7 +22,7 @@ async function laadLeerlingen() {
   toonLeerlingen(data);
 }
 
-// leerlingen tonen (ongewijzigd, behoud je eigen functie)
+// leerlingen tonen )
 function toonLeerlingen(leerlingen) {
   const lijst = document.getElementById("leerlingenContainer");
   lijst.innerHTML = "";
@@ -32,9 +32,9 @@ function toonLeerlingen(leerlingen) {
     div.classList.add("leerling-item");
 
     div.innerHTML = `
-      <p><strong>${l.naam}</strong></p>
-      <button onclick="laadAntwoordenVanLeerling(${l.id})">
-        Bekijk antwoorden
+      <p><strong>${l.naam} "---""</strong>
+      <button onclick="laadAntwoordenVanLeerling(${l.id}, '${l.naam}')">
+        Bekijk antwoorden</p>
       </button>
     `;
 
@@ -44,9 +44,9 @@ function toonLeerlingen(leerlingen) {
 
 
 // antwoorden van leerling ophalen en tonen
-async function laadAntwoordenVanLeerling(usersid) {
+async function laadAntwoordenVanLeerling(usersid, leerlingnaam) {
   const token = localStorage.getItem("token");
-
+  const naam = leerlingnaam;
   try {
     const response = await fetch(`http://localhost:3000/antwoorden/${usersid}`, {
       method: "GET",
@@ -55,30 +55,36 @@ async function laadAntwoordenVanLeerling(usersid) {
 
     const data = await response.json();
 
-    toonAntwoordenVanLeerling(data);
+    toonAntwoordenVanLeerling(data, naam);
 
   } catch (err) {
     console.error("Fout bij ophalen van antwoorden:", err);
   }
 }
 
-function toonAntwoordenVanLeerling(antwoorden) {
+function toonAntwoordenVanLeerling(antwoorden, naam) {
   const container = document.getElementById("antwoordenContainer");
   container.innerHTML = "";
+  const leerlingnaam = naam;
 
   if (antwoorden.length === 0) {
-    container.innerHTML = "<p>Geen antwoorden gevonden.</p>";
+    container.innerHTML = "<p>Geen antwoorden gevonden voor leerling: " + leerlingnaam + "</p>";
     return;
   }
-
+  container.innerHTML += `<h1><strong>Antwoorden van:</strong> ${leerlingnaam}</h1>`;
   antwoorden.forEach(a => {
+    
     const div = document.createElement("div");
     div.classList.add("antwoord-item");
 
     div.innerHTML = `
-      <p><strong>Leskaart-ID:</strong> ${a.leskaartenid}</p>
-      <p><strong>Antwoord:</strong><br> ${a.antwoord}</p>
-      <hr>
+        <table>
+          <tr>
+            <td><strong>Leskaart: ${a.leskaartenid}</strong></td>
+            <td>${a.antwoord}</td>
+          </tr>
+        </table>
+        <br>
     `;
 
     container.appendChild(div);

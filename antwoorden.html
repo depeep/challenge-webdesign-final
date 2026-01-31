@@ -9,13 +9,20 @@
 </head>
 <body>
 <h1>Overzicht Antwoorden Leerlingen</h1>
-<h2>Leerlingen</h2>
-<div id="leerlingenContainer"></div>
+<h2>Kies een leerling</h2>
+<div id="leerlingenContainer" class="kaart"></div>
 
 <h2>Antwoorden</h2>
-<div id="antwoordenContainer"></div>
+<div id="antwoordenContainer" class="kaart"></div>
 
-<!-- <script src="docenten.js"></script> -->
+<button onclick="downloadPDF()">Download als PDF</button>
+<script>
+function downloadPDF() {
+    const element = document.getElementById('antwoordenContainer');
+    html2pdf().from(element).save();
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 <script src="antwoorden.js"></script>
 
 </body>
